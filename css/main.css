@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+button{
+    cursor: pointer;
+}
+#header{
+    text-align: center;
+    font-family: sans-serif;
+}
+.container{
+    margin: auto;
+    margin-top: 12%;
+    width: 600px;
+    padding: 20px;
+    /* background-color: gainsboro; */
+    font-family: sans-serif;
+    /* border: 2px solid deepskyblue; */
+    text-align: center;
+    
+}
+#bmi:hover{
+    width: 100px;
+    padding: 10px 0;
+    
+    background-color: aqua;
+}
+#clear:hover{
+    padding: 10px 20px;
+    background-color: aqua;
+   
+}
+#secIn{
+    float: right;
+}
+#comment{
+    color: rgb(52, 187, 11);
+}

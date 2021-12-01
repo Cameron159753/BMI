@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Obi Plabon">
+
+    <title>BMI</title>
+   
+    <link rel="stylesheet" href="./css/color-default.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    
+</head>
+<body>
+    <div class="container">
+        <h1 id="header">Calculate Your BMI</h1>
+        
+        <label for="weight" class="myLabel">Your Weight</label><br>
+        <input class="input" type="text" name="weight" id="weight" placeholder="(kg)"><br><br>
+        <label class="myLabel" for="height">Your Height</label><br>
+        <input class="input" type="text" name="height" id="height" placeholder="(m)"><br><br>
+        <label class="myLabel" for="gender">Gender</label>
+        <select name="gender" id="gndr" onclick="disableInput()">
+            
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <label class="myLabel" for="age">Age</label>
+        <input class="input" type="text" name="age" id="age" ><br><br>
+        <button id="bmi" onclick="myBMI()">Generate BMI</button><br><br>
+        <!-- <div id="outputBmi"></div> -->
+        <label for="BMI">BMI</label>
+        <input class="input" type="text" id="outputBmi" disabled>
+        <!-- <div id="IdealBmi"></div> -->
+        <div id="secIn">
+        <label for="BMI">Ideal BMI</label>
+        <input class="input" type="text" id="IdealBmi" disabled>
+        </div><br><br>
+        <div id="comment"></div><br>
+        <button id="clear" onclick="clear_inputs()">clear</button>
+        
+    </div>
+
+    <script src="./js/index.js"></script>
+    <script>
+        var colorSheets = [
+            {
+                color: "#ff8400",
+                title: "Switch to Default",
+                href: "./css/color-default.css"
+            },
+            {
+                color: "#ff463a",
+                title: "Switch to Red",
+                href: "./css/color-red.css"
+            },
+            {
+                color: "#4bda28",
+                title: "Switch to Green",
+                href: "./css/color-green.css"
+            },
+            {
+                color: "#4650dc",
+                title: "Switch to Blue",
+                href: "./css/color-blue.css"
+            },
+            {
+                color: "#f41c54",
+                title: "Switch to Magenta",
+                href: "./css/color-magenta.css"
+            }
+        ];
+
+        ColorSwitcher.init(colorSheets);
+    </script>
+</body>
+</html>
